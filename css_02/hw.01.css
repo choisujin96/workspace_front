@@ -5,22 +5,18 @@ table{
 	border-bottom: 3px solid #d5d5d5;
 }
 
-thead{
+ thead{
 	background: #d5d5d5;
-}
-
-thead>tr{
 	border-top: 2px solid #6e6e6e;
-	border-bottom: 2px solid #646464;
+	border-bottom: 2px solid #646464; 
 }
 
 tbody{
 	text-align: center;
-	
 }
 
 tbody tr:hover{
-	background-color: #ffff00;
+	background-color: #ffff00; 
 }
 
 tbody>tr>td{
@@ -28,3 +24,8 @@ tbody>tr>td{
 	border-bottom: 2px dotted #d5d5d5;
 }
 
+table>tbody>tr:nth-child(2n){
+	background-color: aqua;
+}
+/* 예쁘당 (2n-1)=홀수칸
+		 (2n)=짝수칸 */
