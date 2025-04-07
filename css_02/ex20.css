@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*(자동초기 간격)초기화 코드 */
+body, div, 
+ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, 
+input, form, select, textarea, button, fieldset, legend, 
+p, table, th, td, tr{
+    margin: 0; padding: 0;
+}
+/* -> 같은 성질을 가진 태그끼리 묶어 놓음. */
+
+
+/* 0은 px 단위 붙이지 않아도 됨 */
+
+
+body{
+	background-color: #808080;
+	font-family: "맑은 고딕";
+	font-size: 12px;
+}
+
+.wrap{
+	width: 700PX;
+	background-color: #fff;
+}
+
+
+.wrap h3{ 
+	font-size: 18px;
+	font-weight: bold;
+	/* border: 1px solid #000; */
+}
+
+/* 공통 */
+.form-group{
+	margin-bottom: 10px;
+	/* border:1px solid #000 */
+}
+/* 가상의 가이드 라인 */
+
+
+.form-title{
+	display: inline-block;
+	width:80px;
+}
+
+
+/* .form-group label{
+	display: inline-block;
+	/* width:80px;
+} */
+
+
+/* 게시판 선택 */
+.form-group #sel-board{
+	width: 200px;
+}
+
+/* 제목 */
+.form-group #txt-title{
+	width: 600px;
+}
+
+/* 패스워드 */
+.form-group #txt-pw{
+	width: 197px;
+}
+
+/* 공개범위, 허용범위 */
+.form-group input[type="radio"],
+.form-group input[type="checkbox"]{
+	margin-right: 10px;
+}
+/* 이 속성 공식 외우기!!!
+폼에서 많이 사용함 */
+
+
+/* 글내용 */
+.form-group textarea{
+	width: 658px;
+	height: 80px;
+}
+
+/* 버튼그룹 */
+.btn-group{
+	padding: 10px;
+	border-top: 1px solid #000;
+	text-align: center;
+	
+}
+
+.btn-group button{
+	width: 60px;
+	height: 30px;
+}
