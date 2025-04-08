@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>스타일시트</title>
 
+		<link rel="stylesheet" href="../css_02/reset.css">
         <link rel="stylesheet" href="./hw03.css">
     </head>
 
@@ -16,6 +17,13 @@
 
             <form action="" method="">
         
+
+				<ol class="clearfix">
+					<li>홈</li>
+					<li>게시판</li>
+					<li>일반게시판</li>
+				</ol>
+
             
                 <!-- 아이디 -->
                 <div class="form-group">
@@ -41,19 +49,28 @@
                     <input id="txt-file" type="file" name="" value="">
                 </div>
 
-                <!-- 주소 -->
-                <div class="form-group">
-                    <label for="txt-adrs" class="form-title">주소</label>
-                    <input id="txt-adrs" type="text" name="" value="">
-                    <button>우편 번호 찾기</button> 
-                </div>
 
-                <!-- 상세주소칸 -->
-                <div class="form-group">
-                    <label for="txt-add" class="form-title"> </label>
-                    <input id="txt-add" type="text" name="" value="">
-                <div>   
-            
+
+			
+						
+
+			<!-- 주소 -->
+				<div>
+					<label for="txt-adrs" class="form-title">주소</label>
+					<input id="txt-adrs" type="text" placeholder="주소밸류" name="" value="">
+					<button>우편 번호 찾기</button> 
+				</div>
+
+				<!-- 상세주소칸 --> 
+				<div class="form-group">
+					<label for="txt-add" class="form-title"> </label>
+					<input id="txt-add" class="adrs2" placeholder="주소밸류" type="text" name="" value="">
+				</div>
+		
+
+
+
+
                 <!-- 이동통신사-->
                 <div class="form-group">
                     <label for="telecom" class="form-title">이동통신사</label>
@@ -63,7 +80,7 @@
                         <option>KT</option>
                         <option>LG U+</option>
                     </select>
-                <div>
+                </div>
                 
                 <!-- 나이 -->
                 <div class="form-group">
@@ -71,19 +88,19 @@
                     <span class="form-title">나이</span>
                     
                     <label for="rdo-teen">10대</label>
-                    <input id="rdo-teen" type="radio" name="" value="">
+                    <input id="rdo-teen" type="radio" name="age" value="">
                 
                     <label for="rdo-twty" >20대</label>
-                    <input id="rdo-twty" type="radio" name="" value="">
+                    <input id="rdo-twty" type="radio" name="age" value="">
 
                     <label for="rdo-thty" >30대</label>
-                    <input id="rdo-thty" type="radio" name="" value="">
+                    <input id="rdo-thty" type="radio" name="age" value="">
 
                     <label for="rdo-forty">40대</label>
-                    <input id="rdo-forty" type="radio" name="" value="">
+                    <input id="rdo-forty" type="radio" name="age" value="">
 
                     <label for="rdo-etc">기타</label>
-                    <input id="rdo-etc" type="radio" name="" value="">
+                    <input id="rdo-etc" type="radio" name="age" value="">
                 
                 </div>       
         
@@ -93,16 +110,16 @@
                     <span class="form-title">혈액형</span>
                     
                     <label for="rdo-a">A형</label>
-                    <input id="rdo-a" type="radio" name="" value="">
+                    <input id="rdo-a" type="radio" name="blood" value="">
                 
                     <label for="rdo-b" >B형</label>
-                    <input id="rdo-b" type="radio" name="" value="">
+                    <input id="rdo-b" type="radio" name="blood" value="">
 
                     <label for="rdo-o" >O형</label>
-                    <input id="rdo-o" type="radio" name="" value="">
+                    <input id="rdo-o" type="radio" name="blood" value="">
 
                     <label for="rdo-ab">AB형</label>
-                    <input id="rdo-ab" type="radio" name="" value="">
+                    <input id="rdo-ab" type="radio" name="blood" value="">
                 
                 </div>       
 
@@ -111,7 +128,7 @@
                 <div class="form-group">
 
                     <span class="form-title">취미</span>
-                    
+            
                     <label for="chk-book">독서</label>
                     <input id="chk-book" type="checkbox" name="" value="">
                 
@@ -134,7 +151,7 @@
                 <!-- 자기소개 -->
                 <div class="form-group">
                     <label for="txt-self" class="form-title">자기소개</label>
-                    <textarea class="txt-ar"></textarea>
+                    <textarea id="txt-self"></textarea>
                 </div>    
             
                 <!-- 버튼 -->

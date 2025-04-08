@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body, div, 
+ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, 
+input, form, select, textarea, button, fieldset, legend, 
+table, th, td, tr{
+    margin: 0; padding: 0;
+}
+
+
+input, select, textarea{
+	font-family: inherit;
+	font-size: inherit;
+}
+/* 텍스트상자는 내려주는 코드를 잘 안받으려고 함
+직접 먹여줘도 되지만 다른 곳 폰트가 변경되면
+다 일일이 변경해줘야하는 번거로움이 있기 때문에
+위에 애들한테 상속(통일)되서 쓰는 게 좋다 inherit  */
+
+
+/* clearfix */
+.clearfix::before, .clearfix::after{
+	display: block; content: ""; 
+	line-height: 0;}
+.clearfix::after {clear: both;}
+
+
+ol, ul {
+	list-style-type: none;
+
+}
+
+a{
+	text-decoration: none;   /*밑줄제거*/
+	color: inherit;          /*부모색상 상속*/
+}

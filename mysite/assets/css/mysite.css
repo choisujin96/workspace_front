@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+/* 레이아웃 ********************************/
+
+body{
+	font-family: "맑은 고딕";
+	font-size: 12px;
+	color: #000;
+}
+
+
+
+
+#wrap{
+	width: 1000px;
+	margin: 0px auto; /*상하좌우 0, 창크기에 따라 자동으로 가운데 정렬*/
+	/* border: 1px solid #000; */
+}
+
+#header{
+	padding: 10px 0px 10px 0px;
+	/* border: 1px solid #000; */
+}
+
+#nav{
+	border: 1px solid #000;
+	/* padding: 5px 200px 5px 200px; */
+}   
+
+#content{
+	border: 1px solid #000;
+}
+
+#footer{
+	border: 1px solid #000;
+}
+/* 레이아웃 ********************************/
+
+
+
+/* 헤더관련 *******************************/
+#header h1{
+	font-size: 35px;
+	color: #79b30b;
+	font-weight: bold;
+	float: left;
+}
+    /*주석처리 한 건 초기에 가이드 잡았다가 지운 것!
+	원래는 삭제해야하는데 까먹을 거 같아서 남겨둠*/
+#header ul{
+	float: right;
+	margin-top: 14px;
+	/* background-color: #4b4848; */
+	/* padding: 5px; */
+}
+
+#header ul>li{
+	float: left;
+	margin-left: 10px;
+	padding: 3px 5px 3px 5px;
+	border-radius: 3px;
+	background-color: #d6d6d6;
+	border: 1px solid #a0a0a0;
+}
+
+/* 헤더관련 *******************************/
+
+
+/* 네비관련 *******************************/
+#nav ol{
+	text-align: center;
+	
+}
+
+#nav ol>li{
+	/* border: 1px solid #000; */
+	float: left;
+	margin: 10px 70px 10px 100px ;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* 네비관련 *******************************/
+
+
+/* 컨텐츠관련 *******************************/
+
+
+.conbox{
+	border: spx 500px;
+}
+
+
+
+.p-fontsize{
+	font-weight: bold;
+}
