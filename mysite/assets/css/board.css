@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* ************************
+*게시판관련 페이지에서만 사용(리스트, 등록폼, 수정폼,읽기)
+************** ************/
+
+
+
+/* 검색창 */
+.search-group{
+	padding: 20px 0px 5px 0px; 
+}
+
+
+.btn-search{
+	height: 18px;
+}
+
+
+
+/*테이블 리스트*/
+
+table{
+	border-collapse: collapse;
+}
+
+thead{
+	background-color: #c1e0b4;
+	text-align: center;
+	font-size: 13px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+th{
+	padding: 10px 0px 10px 0px;
+}
+
+
+tbody tr{
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+
+tbody>tr:hover{
+	background-color: rgb(250, 219, 250);
+}
+
+td{
+	padding: 10px 0px 10px 0px;
+}
+
+.td-align{
+	text-align: left;
+}
+
+.del-box{
+	width: 50px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: darkturquoise;
+	text-align: center;
+	margin-left: 15px;
+}
+
+.del-box:hover{
+	background-color: rgb(52, 103, 104);
+	
+}
+
+/*리스트*/
+
+
+
+/* 숫자페이지 */
+.page{
+	padding-left: 250px;
+}
+
+.page>ol>li{
+	float: left;
+	padding-right: 12px;
+}
+/* 숫자페이지 */
+
+
+
+/*등록폼*/
+
+.btn-write{
+	float: right;
+	width: 50px;
+	padding: 5px;
+	font-size: 13px;
+}
+
+/*등록폼*/

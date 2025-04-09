@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+
+
+/* ************************
+전체 초기화
+************** ************/
+
+
+
+
 /* 초기화 */
 body, div, 
 ul, li, dl, dt, ol, 
 h1, h2, h3, h4, h5, h6, 
 input, form, select, textarea, button, fieldset, legend, 
-table, th, td, tr{
+p, table, th, td, tr{
     margin: 0; padding: 0;
 }
+
+
 
 
 input, select, textarea{
@@ -20,11 +31,13 @@ input, select, textarea{
 위에 애들한테 상속(통일)되서 쓰는 게 좋다 inherit  */
 
 
+
 /* clearfix */
 .clearfix::before, .clearfix::after{
 	display: block; content: ""; 
 	line-height: 0;}
 .clearfix::after {clear: both;}
+
 
 
 ol, ul {

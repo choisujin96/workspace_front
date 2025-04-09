@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 
+/* ************************
+*mysite 공통
+************** ************/
+
+
+
 /* 레이아웃 ********************************/
 
 body{
@@ -8,8 +14,6 @@ body{
 	font-size: 12px;
 	color: #000;
 }
-
-
 
 
 #wrap{
@@ -20,22 +24,54 @@ body{
 
 #header{
 	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #585858;
 	/* border: 1px solid #000; */
 }
 
 #nav{
-	border: 1px solid #000;
-	/* padding: 5px 200px 5px 200px; */
+	/* border: 1px solid #000; */
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #585858;
 }   
 
 #content{
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
+	padding: 30px 30px 30px 30px;
 }
 
+
+#content2{
+	padding: 20px 0px 20px 0px;
+}
+
+
+#content2 #aside{
+	width: 180px;
+	margin-right: 20px;
+	float: left;
+	/* border: 1px solid #000; */
+	
+}
+
+
+#content2 #main{
+	width: 798px;  
+	/* 옆에 게시판 박스 사이즈와 마진px, 선px을 제외한 나머지 값  */
+
+	float: left;
+	/* border: 1px solid #000; */
+
+	
+}
+
+
 #footer{
-	border: 1px solid #000;
+	padding: 10px 0px 10px 0px;
+	background-color: #dddddd;
+	/* border: 1px solid #000; */
 }
 /* 레이아웃 ********************************/
+
 
 
 
@@ -63,35 +99,128 @@ body{
 	background-color: #d6d6d6;
 	border: 1px solid #a0a0a0;
 }
-
 /* 헤더관련 *******************************/
+
+
 
 
 /* 네비관련 *******************************/
 #nav ol{
 	text-align: center;
-	
+	/* background-color: #000; */
 }
 
 #nav ol>li{
 	/* border: 1px solid #000; */
+	/* width: 248px; 2px은 보더의 선때문에 250-2함 */
+	width:250px;
 	float: left;
-	margin: 10px 70px 10px 100px ;
 	font-size: 20px;
 	font-weight: bold;
+	text-align: center
 }
 /* 네비관련 *******************************/
 
 
-/* 컨텐츠관련 *******************************/
 
 
-.conbox{
-	border: spx 500px;
+
+
+
+
+/* 컨텐츠2(게시판리스트) *******************************/
+#aside h2{
+	width: 180px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+	/* ㄴ>가운데 배치하는 법: line-height: 60px;
+		   약간의 꼼수 방법.
+	       이 방법은 한 줄 일때에만 사용하는 것을 추천.
+		   두줄을 할 경우 60px의 줄간격으로 한 줄 더
+		   생성되기 때문. 글자수변경에 따라서도 계속
+		   수정해야하는 단점도 있음 */
+
+
+#aside ol>li{
+	padding: 8px 10px 8px 10px;
+	margin: 5px 0px 0px 0px;s
+	font-size: 15px;
+	border: 1px solid #000;
+}
+
+
+#main #main-head{
+	
+	padding: 15px 0px 10px 0px;
+	border-bottom: 1px solid #000000;
+
 }
 
 
 
-.p-fontsize{
+
+#main #main-head h3{
+	float: left;
+	font-size: 20px;
 	font-weight: bold;
+}
+
+#main #main-head ol{
+	float: right;
+	margin-top: 10px;
+	/* background-color: #757575; */
+}
+
+
+
+#main #main-head ol>li{
+	/* border: 1px solid #000; */
+	float: left;
+}
+
+
+#main #main-head ol>li::after{
+	content: ">";
+	padding: 0px, 3px, 0px, 3px;
+}
+
+
+#main #main-head ol>li:last-child::after{
+	content: "";
+	padding: 0px 0px 0px 0px;
+	/* ㄴ> 꺽새줄 때 오른쪽에도 줬기 때문에
+	        0px을 먹여줘야 붙여진다. */
+}
+
+
+
+/* 게시판리스트 */
+/* #board-list{
+	width: 790px;
+	border: 1px solid #000;
+} */
+
+
+
+
+
+/* 갤러리 */
+/* 방명록 */
+
+/* 컨텐츠2(게시판리스트) *******************************/
+
+
+
+
+
+/* 푸터 *******************************/
+#footer{
+	text-align: center;
+
 }
