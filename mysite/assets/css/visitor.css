@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+table{
+	border-collapse: collapse;
+	border: 1px solid #000;
+	margin: 5px 0px 5px 0px;
+}
+
+table tr>td{
+	border: 1px solid #000;
+	padding: 10px 0px 10px 5px;
+}
+
+.comment{
+	width: 790px;
+	height: 100px;
+}
+
+.btn-visitor{
+    padding: 5px 20px 5px 20px;
+	border-radius: 10px;
+	border: 2px solid #7c2424;
+	background-color: burlywood;
+	margin-left: 350px;
+}
+
+
+.btn-visitor:hover{
+	background-color: rgb(209, 129, 23);
+}

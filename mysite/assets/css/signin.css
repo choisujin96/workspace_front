@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#signin{
+	width: 500px;
+	padding: 50px 0px 50px 0px;
+	margin: 0px 50px 0px 130px;
+	border: 1px solid #000000;
+
+}
+
+.form-group{
+	padding: 8px 0px 8px 0px;
+	margin: 0px 50px 0px 90px;
+	/* border: 1px solid #b66969; */
+}
+
+
+.form-title{
+	display: inline-block;
+    width: 100px;
+	padding-right: 5px; 
+    font-size: 13px;
+	text-align: right;
+	/* border: 1px solid #000; */
+}
+
+
+.sj{
+	font-weight: bold;
+}
+
+
+.form-group span~label{
+	font-size: 13px;
+}
+
+.btn-signin{
+	width: 110px;
+	padding: 5px 0px 5px 0px;	
+	margin: 0px 0px 0px 205px;
+	text-align: center;
+}
