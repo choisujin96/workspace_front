@@ -2,24 +2,26 @@
 
 
 .img-upload{
+	border: 1px solid #ff00ff;
 	width: 100px;
 	padding: 5px 0px 5px 0px;
 	float: right;
 }
 
 
+.all{
+	display: flex;
+	flex-direction: row;
+}
 
-#gallery{
-	width: 798px;
+
+.box{
+	width:200px;
+	height: 300px;
 	border: 1px solid #000;
-	float: left;
+
 }
 
-
-#gallery img{
-	width: 250px;
-	float: left;
+img{
+	width: 180px;
 }
-
-
-
