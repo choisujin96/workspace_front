@@ -26,13 +26,14 @@
 
 .box{
 	margin:0px 10px 10px 0px;
-	width:200px;
+	width:180px;
 	height: 200px;
 	border: 1px solid #000;
 
 }
 
 img{
-	padding-left: 10px;
-	width: 180px;
+	padding-left: 5px;
+	width: 170px;
 }
+
