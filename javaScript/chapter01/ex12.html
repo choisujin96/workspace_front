@@ -1,0 +1,53 @@
+<html lang="ko">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+
+	</head>
+
+	<body>
+		<h1>자바스크립트</h1>
+
+		<script>
+			window.console.log('=================================');
+			window.console.log('#익명함수의 변수와 기명함수의 이름이 같을 때');
+			
+			/* 케이스 1
+			let str = 'global';
+
+			function checkScope(){
+				let str = 'local';
+				console.log(str);
+			}
+
+			checkScope(); //한번 출력된 후 사라진다.
+			console.log(str);
+			*/
+
+
+			let str = 'global';
+
+
+			function checkScope(){
+				str = 'local';
+				str2 = '로컬'; //암묵적으로 새 전역 변수가 선언됨(주의!!! 되도록 쓰지말고 피해가라.)
+				
+			}
+
+			checkScope();
+			console.log(str);
+			console.log(str2);
+
+
+
+
+		</script>
+	</body>
+
+
+
+
+
+
+</html>

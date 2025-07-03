@@ -1,0 +1,46 @@
+<html lang="ko">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+
+	</head>
+
+	<body>
+		<h1>자바스크립트</h1>
+
+		<script>
+			window.console.log('=================================');
+			window.console.log('#if문');
+
+			let no = window.prompt('숫자를 입력해주세요.')
+			console.log(no);	
+			console.log(typeof no);	//string
+
+			if(no==0){    //no가 number형으로 변경되서 계싼된다
+				console.log('0입니다.');
+			}else if(no>0){
+				console.log('양수입니다.');
+			}else if(no<0){
+				console.log('음수입니다.');
+			}
+
+			if(no == 60){
+				console.log('같다');
+			}
+			
+			if(no === 60){
+				console.log('다르다');
+			} //콘솔창에 값 안나옴. 왜? 같지 않으니 통과할 수 없음.
+
+
+
+		</script>
+	</body>
+
+
+
+
+
+
+</html>

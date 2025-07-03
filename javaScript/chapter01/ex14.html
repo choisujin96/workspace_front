@@ -1,0 +1,124 @@
+<html lang="ko">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+
+	</head>
+
+	<body>
+		<h1>자바스크립트</h1>
+			<script>
+				window.console.log('=================================');
+				window.console.log('#배열');
+
+				//배열선언 방법1
+				let arr00 = new Array();   
+				arr00[0] = 1;
+				arr00[1] = 2;
+				arr00[2] = 3;
+				
+				console.log(arr00[1]);
+
+				console.log('---------------------------------------');
+				///////////////////////////////////////////////////////
+
+				//배열선언 방법2  --> 제일 많이 쓰는 방법
+				let arr01 = [10, 20, 30, 40, 50];
+				console.log(arr01[1]);
+
+				let no = arr01[4]
+				console.log(no);
+
+				arr01[2] = 300;
+				console.log(arr01[2]);
+
+				arr01[5] = 1000;
+				
+				console.log('---------------------------------------');
+
+				//전체출력 for문
+				for(let i=0; i<arr01.length; i++){
+					console.log(arr01[i]);
+				}
+
+				console.log('---------------------------------------');
+				//전체출력(개발용)
+				console.log(arr01);
+
+				console.log('---------------------------------------');
+
+				//값 없이 배열만 선언
+				let arr02 = [];
+				arr02[0] = 1;
+				arr02[1] = 2;
+				arr02[2] = 3;
+
+				for(let i=0; i<arr02.length; i++){
+					console.log(arr02[i]);
+				}
+				console.log('---------------------------------------');
+
+				////////////////////////////////////////////////////////////////
+				//자바스크립트의 변수 number, string, boolean, undifrinded, function
+				//let aaa = function(){console.log('aaa')};
+				
+				let arr03 = [];
+				arr03[0] = 1;
+				arr03[1] = 1.5;
+				arr03[2] = '안녕';
+				arr03[3] = 'hello';
+				arr03[4] = 5>3;
+				arr03[5] = function(){
+					console.log('은지원')
+				};
+
+
+				for(let i=0; i<arr03.length; i++){
+
+					if(typeof arr03[i] === 'function'){
+						arr03[i]();
+					
+					}else {
+						console.log(arr03[i])
+					}
+				}
+
+				console.log('---------------------------------------');
+
+				arr03[5](); //함수의 실헹
+				//변수에 함수를 넣을 수 있다
+				//변수 이름을 부르고 ()실행한다--> 이름 부르는 거랑 실행을 구분해라				
+				
+				console.log('---------------------------------------');
+
+				let arr04 = [1,2.5, '안냥', ['박명수', '정우성', '유재석']]
+
+				console.log(arr04[2]);
+				console.log(arr04[3][1]);
+
+
+				console.log('---------------------------------------');
+
+				let arr05 = ['신재평'];
+				arr05[1] = '이장원';
+				arr05.push('유재석'); //무조건 맨끝자리에 추가추가
+				arr05.push('이병헌');
+				console.log(arr05);
+
+				arr05.pop()
+				console.log(arr05);
+				
+				//참고 다양한 함수가 있다. 필요하면 찾아보기
+				arr05.splice(1,1)
+				console.log(arr05);
+
+			</script>
+	</body>
+
+
+
+
+
+
+</html>
