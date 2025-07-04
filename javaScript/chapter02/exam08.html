@@ -91,26 +91,20 @@ document.addEventListener('DOMContentLoaded',function(){
 		hp:  pms2.innerText,
 		company: pms1.lastElementChild.innerText
 	}
+	
 
 	personList.push(personVO1);
 	personList.push(personVO2);
 	personList.push(personVO3);
-
+	
 
 	for(let i=0; i<personList.length; i++){
-		console.log(personList[i]);
+		console.log('name: ' + personList[i].name + ' hp: ' + personList[i].hp 
+					+ ' company: ' + personList[i].company);
 	}
-
-
 
 	
 });
-
-
-
-
-
-
 
 
 
