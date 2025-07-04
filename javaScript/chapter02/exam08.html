@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id="logo">자바스크립트</h1>
+	<div id="nav">
+		<ul>
+			<li id="board">게시판</li>
+			<li id="gallery" class="active">갤러리</li>
+			<li id="guestbook">방명록</li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		<p class="red">내용1입니다.</p>
+
+		<p class="blue">내용2입니다.</p>
+	</div>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>핸드폰</th>
+				<th>회사</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="n-1">
+				<td>정우성</td>
+				<td id="h-1">010-1111-1111</td>
+				<td>02-1111-1111</td>
+			</tr>
+			<tr id="n-2">
+				<td>이효리</td>
+				<td id="h-2">010-2222-2222</td>
+				<td>02-2222-2222</td>
+			</tr>
+			<tr id="n-3">
+				<td>박명수</td>
+				<td id="h-3">010-3333-3333</td>
+				<td>02-3333-3333</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+
+	let personList = [];
+
+	//정우성
+	let jws1 = document.querySelector('#n-1');
+	let jws2 = document.querySelector('#h-1')
+
+	let personVO1 = {
+		name: jws1.firstElementChild.innerText,
+		hp: jws2.innerText,
+		company: jws1.lastElementChild.innerText
+	}
+
+
+
+	//이효리
+	let lhr1 = document.querySelector('#n-2');
+	let lhr2 = document.querySelector('#h-2');
+
+	let personVO2 = {
+		name: lhr1.firstElementChild.innerText,
+		hp: lhr2.innerText,
+		company: lhr1.lastElementChild.innerText
+	}
+	
+
+
+
+	//박명수
+	let pms1 = document.querySelector('#n-3');
+	let pms2 = document.querySelector('#h-3');
+
+
+	let personVO3 = {
+		name: pms1.firstElementChild.innerText,
+		hp:  pms2.innerText,
+		company: pms1.lastElementChild.innerText
+	}
+
+	personList.push(personVO1);
+	personList.push(personVO2);
+	personList.push(personVO3);
+
+
+	for(let i=0; i<personList.length; i++){
+		console.log(personList[i]);
+	}
+
+
+
+	
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>

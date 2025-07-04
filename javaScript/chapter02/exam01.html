@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<!--아이디-->
+	<ul>
+		<li id="first"> 텍스트1 텍스트1 텍스트1 텍스트1 텍스트1 </li>
+		<li id="second"> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2 </li>
+		<li id="third"> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3 </li>
+		<li id="fourth"> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4 </li>
+		<li id="first"> 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 </li>
+	</ul>
+
+<!-- -------------------------------------------------------------------------- -->	
+<script>
+
+
+//html은 document에서 관리 --> html 초벌구이가 완료되었을 때 
+//돔트리 완료되었을때		 ('시점', 해야할일) 돔 시점에 이 동작(오른쪽) 사용해
+document.addEventListener('DOMContentLoaded', function() {
+	console.log('돔트리 완료 -- 페인팅 되기 전');
+
+	//////////////////////id로 찾기////////////////////////////////
+	 let seTag= document.getElementById('second');
+	 seTag.style.color = '#ff0000';
+
+	let thTag = document.getElementById('third');
+	thTag.style.color = '#0000ff';
+
+	let foTag = document.getElementById('fourth');
+	foTag.style.color = '#00ff00';
+
+	//!!!!!!동일한 id가 존재 --> 맨위에 1개만 적용(id 가 아닌  class 로 하던가, 아니면 이름을 변경하던가 해야함.)
+	let firTag = document.getElementById('first');
+	firTag.style.color = '#ff00ff';
+
+});
+
+
+
+
+
+//렌더트리 완료 되었을 때
+window.addEventListener('load', function(){
+	console.log('페인팅까지 완료')
+
+
+});
+
+
+
+
+
+
+
+
+
+</script>
+<!-- -------------------------------------------------------------------------- -->
+
+
+</body>
+
+
+
+</html>
