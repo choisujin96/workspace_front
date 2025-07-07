@@ -62,9 +62,45 @@
 
 
 
+<script>
+//돔트리가 완료 되었을 때
+document.addEventListener('DOMContentLoaded', function(){
+
+	console.log('돔트리 완료');
+
+	let p11Tag = document.querySelector('#p11');
+	console.log(p11Tag);
+	console.log(p11Tag.innerHTML);
+	console.log(p11Tag.textContent);
+	console.log(p11Tag.innerText);  //innerText(X) --> textContent(O)  왜냐면 보안에 안좋음 
+
+
+	let p13Tag = document.querySelector('#p13');
+	console.log(p13Tag);
+	p13Tag.textContent = '<strong>가나다라마바사아자차카타파하</strong>'; //html글자로 출력
+	
+	let p14Tag = document.querySelector('#p14');
+	p14Tag.innerHTML = '<strong>가나다라마바사아자차카타파하</strong>'; //html 반영해줌 
+
+	//요소의 값(content --> 글자)을 없애는 법
+	let p01Tag = document.querySelector('#p1');
+	console.log(p01Tag);
+	p01Tag.textContent = '';
+
+});
+
+
+
+
+
+
+
+
+</script>
+
+
 </body>
 
-<script>
-</script>
+
 
 </html>
