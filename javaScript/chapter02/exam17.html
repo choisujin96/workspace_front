@@ -1,0 +1,117 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+
+	<style>
+		ul{
+			background-color: #60e2a1;
+			padding: 10px;
+			width: 300px;
+		}
+
+
+		ul>li{
+			border: 1px solid #000000;
+			background-color: #ffffff;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<ul>
+		<li>첫번째 아이템입니다.</li>
+		<li>두번째 아이템입니다.</li>
+		<li>세번째 아이템입니다.</li>
+		<li>네번째 아이템입니다.</li>
+		<li>다섯번째 아이템입니다.</li>
+
+
+	</ul>
+
+	<button id="btn" type="button">뒤에추가</button>
+	<!-- ------------------------------------------------- -->
+<script>
+	document.addEventListener('DOMContentLoaded',function(){
+		console.log('돔트리리리');
+
+		let btnTag = document.querySelector('#btn');
+		console.log(btnTag);
+
+		btnTag.addEventListener('click', function(){
+			console.log('클릭릭');
+
+			let ulTag = document.querySelector('ul');
+			console.log(ulTag);
+
+			let addHtml = '<li>뒤에 추가된 아이템입니당</li>'
+			ulTag.insertAdjacentHTML('beforeend',addHtml);
+
+		});
+
+
+
+
+
+
+
+
+
+		/*
+		//li태그 이벤트 등록(클릭한 li 태그삭제) 
+		let liTags = document.querySelectorAll('li');
+		console.log(liTags);
+
+		for(let i=0; i<liTags.length; i++){
+			liTags[i].addEventListener('click', function(){
+				console.log(i+'-li태그삭제')
+				
+				this.remove();
+
+					// 지금 상황에서는 같다  ===>  두개는 다른 경우도 있다
+				console.log(this); 			//이벤트 리스너가 있는 태그(요소)
+				console.log(event.target); //사용자가 실제로 클릭한 태그(요소)
+
+			});
+		
+		}
+		*/
+
+		
+		//--> 추가된 li 는 클릭이벤트 등록이 안된다!!!!!
+		//부모(ul요소)에 클릭 이벤트 (할일)를 등록해준다 
+		// 이벤트가 발생하면 할일은 자식에게 !!!!!위임(전달)!!!!!해라
+
+		let ulTag = document.querySelector('ul');
+		console.log(ulTag);
+		ulTag.addEventListener('click', function(event){
+			console.log('ul 클릭');
+
+			//두개는 다른 경우
+			console.log(this); //이벤트리스너가 있는 태그(요소)
+			console.log(event.target)//사용자가 실제로 클릭한 태그(요소)
+			console.log(event.target.tagName); //실제로 클릭한 태그네임(대문자로 출력됨!!!!!!)
+		
+			if(event.target.tagName == 'LI'){		
+				
+				console.log('li태그 클릭했음');
+				event.target.remove();
+
+			}
+		
+		
+		
+		
+		});
+	});
+
+
+
+</script>
+
+</body>
+</html>
