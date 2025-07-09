@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 
 <title>Insert title here</title>
+<script src="../assets/js/jquery-3.7.1.js"></script>
 </head>
 
 <body>
@@ -28,6 +29,30 @@
 	<input type="text" name="name">
 	<input type="text" name="password">
 	
+<script>
+$(document).ready(function(){
+	console.log('돔트리 완느료');
+
+	let liTags = $('[class]');
+	console.log(liTags);
+	liTags.css('color','#ff0000');
+
+	let firTag = $('[class="first"]');
+	console.log(firTag);
+	firTag.css('color', '#ff00ff');
+
+	let tags = $('[name="password"]');
+	console.log(tags);
+
+	console.log($('input[name="id"]'));
+
+	console.log($('input[name]'));
+
+});
+
+
+
+</script>
 </body>
 
 

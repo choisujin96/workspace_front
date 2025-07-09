@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 
-
+<title>Insert title here</title>
+<!--css-->
 <style>
 	.red {color: red;}
 	
 	.blue {color: blue;}
 
 </style>
-
-
-<title>Insert title here</title>
+<!--js-->
+<script src="../assets/js/jquery-3.7.1.js"></script>
 </head>
 
 <body>
@@ -28,6 +28,46 @@
 	비밀번호2:<input type="password" name="password2" value="1234"><br>
 	<textarea name="content2">산토끼토끼야</textarea>
 	
+<script>
+$(document).ready(function(){
+	console.log('돔트리완료');
+
+
+	//태그잡아오기
+	let nameTag = $('input[name="name"]');
+	let pwTag = $('[name="password"]');
+	let txTag = $('[name="content"]');
+	
+	//이름	
+	nameTag.val('정우성');	
+	//비밀번호
+	pwTag.val('123dddd')
+	//컨텐츠
+	txTag.val('하ㅣㄱ교종이 땡땡댕');
+
+////////////////////////////////////////////////////////////
+
+	//태그잡아오기
+	let nameTag2 = $('[name="name2"]');
+	let pwTag2 = $('[name="password2"]');
+    let txTag2 = $('[name="content2"]');
+	
+	
+	
+	console.log(nameTag2.val());
+	nameTag2.val('한지민');
+	pwTag2.val('assdffsfsd');
+	txTag2.val('안녕하모니카');
+
+
+
+
+});
+
+
+
+
+</script>
 </body>
 
 
